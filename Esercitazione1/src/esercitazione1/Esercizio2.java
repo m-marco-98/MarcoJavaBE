@@ -30,14 +30,14 @@ public class Esercizio2 {
 		int contatore = 0;
 		int i = 1;
 		
-//		for (int i = 1; i <= numero; i = 10*i) {
+//		for (i = 1; i <= numero; i = 10*i) {
 //			if (numero*i > i){
 //				contatore++;
 //			}
 //		}
 		
-		while (i <= numero*i) {
-			i = i*10;
+		while (numero > 0) {
+			numero = numero/10;
 			contatore++;
 		}
 		
