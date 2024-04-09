@@ -29,7 +29,8 @@ public class Esercizio2 {
 	    
 		int contatore = 0;
 		int i = 1;
-		
+
+		//Metodo alternativo che conta le divsioni per potenze di 10, fin a uando queste sono inferiori al numero
 //		for (i = 1; i <= numero; i = 10*i) {
 //			if (numero*i > i){
 //				contatore++;
