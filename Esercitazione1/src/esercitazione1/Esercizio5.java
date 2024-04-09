@@ -18,7 +18,7 @@ public class Esercizio5 {
 		System.out.println("Inserisci il terzo lato");
 		int c = input.nextInt();
 		
-		
+	    //Sbagliato
 	    if (c < a+b || b < a+c || a < b+c) {
 	    	System.out.println("Il triangolo esiste");
 	    } else {
