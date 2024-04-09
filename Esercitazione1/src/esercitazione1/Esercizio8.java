@@ -15,7 +15,8 @@ public class Esercizio8 {
 		String numOrd = "";
 		
 		System.out.println("Inserisci 5 numeri");
-		
+
+		//Acquisizione dei numeri inutilmente complicata, solo prove di switch
 		for (int i = 0; i < 5; i++) {
 			
 			switch (k){
@@ -44,13 +45,15 @@ public class Esercizio8 {
 			
 		}
 		
-		
+
+		//Esegue sequenzzialmente la somma man mano che i numeri vengono inseriti
 		for (int i = 0; i < 5; i++) {
 			
 			somma = somma + numeri[i];
 			
 		}
-		
+
+		//Calcola la media dividendo la somma per il numero di elementi dell'array
 		media = somma / numeri.length;
 		
 		System.out.println("La somma è " + somma + ", la media è " + media);
