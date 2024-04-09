@@ -36,8 +36,6 @@ public class Esercizio1 {
 		
 		System.out.println("\n" + nomi.size());
 		
-		Collections.sort(nomi);
-		
 		nomi.removeAll(nomi);
 		for (int i = 0; i < nomi.size(); i++) {
 			System.out.println(nomi.get(i) + " " + i);
