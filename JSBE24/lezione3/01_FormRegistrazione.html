@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form registrazione</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Inserisci i tuoi dati</h1>
+    
+    <form action="./grazie.html" method="get" id="formReg">
+
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" class=""> <br>
+        
+        <label for="cognome">Cognome: </label>
+        <input type="text" name="cognome" id="cognome"> <br>
+       
+        <label for="eta">Età: </label>
+        <input type="number" name="eta" id="eta"> <br>
+
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email"> <br>
+
+        <label for="password">Password: </label>
+        <input type="text" name="password" id="password"> <br>
+
+        <input type="checkbox" name="termCond" id="termCond"> <br>
+        <label for="termCond">Termini & Condizioni: </label>
+
+        <button type="submit">Invia</button>
+
+    </form>
+
+    <div id="demo"></div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
