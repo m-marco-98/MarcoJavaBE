@@ -25,7 +25,6 @@ public class UtenteServiceImpl implements UtenteService {
 
 	@Override
 	public Utente getUtenteByLogin(String username, String password) {
-		
 		return dao.getUtenteByLogin(username, password);
 	}
 	
