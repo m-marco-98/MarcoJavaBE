@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigCloudRegistrati</title>
+    <link rel="stylesheet" href="./css/stylecloud.css">
+</head>
+<body class="bg text">
+    <img class="allineamentoc" src="./img/logo_bigcloud.png" alt="200">
+   <div class="text2"><h1 >BENVENUTO IN BIGCLOUD</h1></div>
+    <!--form di registrazione alla fine dovrebbe portarti alla home-->
+    <form action="./login.html" method="get" id="formReg">          
+
+        <!-- <label for="username">Username</label> -->
+        <input type="text" name="username" id="username" placeholder="Username"><br><br>
+
+        <!-- <label for="nome">Nome</label> -->
+        <input type="text" name="nome" id="nome" placeholder="Nome"><br><br>
+
+        <!-- <label for="cognome">Cognome</label> -->
+        <input type="text" name="cognome" id="cognome" placeholder="Cognome"><br><br>       
+
+        <!-- <label for="email">Email</label> -->
+        <input type="text" name="email" id="email" placeholder="Email"><br><br>
+
+        <!-- <label for="Password">Password</label> -->
+        <input type="password" name="pass" id="pass" placeholder="Password"><br><br>
+
+        <!-- <label for="ContPassword">Controllo Password</label> -->
+        <input type="password" name="contpass" id="contpass" placeholder="Ripeti Password"><br><br>
+
+        <input type="checkbox" name="termCond" id="termCond" >
+        <label for="termCond">Termini & Condizioni</label><br><br>
+
+
+        <button type="submit">Registrati</button>       
+    </form>
+
+    <div id="reg"></div>
+    <script src="./js/scriptSregistrati.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+.clearFix{
+    clear: both;
+}
+
+.boxNav{
+    display: block;
+    border: 3px solid #f400a1;  
+    height: 120px;
+    width: 100%;
+    margin: 0;
+    margin-left: 5px;
+    
+    
+    
+}
+.boxNav2{
+    
+    border: 3px solid #f400a1;
+    width: 250px;
+    height: 90vh;
+    margin-top: px;
+    margin: 0;
+    border-top: 0px;
+}
+.boxNav3{
+    
+    border: 3px solid #f400a1;
+    width: 1600px;
+    height: 90vh;
+    margin-top: 0px;
+    margin-left: 10px;
+    background-image: url("./bg.jpg");
+    border-top: 300px;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+}
+/* campo sbagliato */
+.borderRed{
+    border: 1px solid red;
+}
+/* background colore */
+.bg{     
+    background-color: #0a0a0a;
+    
+}
+/* testo */
+.text{
+    text-align: center;
+    color: white;
+    font-style:inherit;
+}
+.text2{
+    text-align: center;
+    color: #f400a1;
+    font-family:'Courier New', Courier, monospace;
+}
+.text3{
+    text-align: justify;
+    color: #f400a1;
+    font-family:'Courier New', Courier, monospace;
+    float: left; 
+    line-height: 50px; 
+    margin-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+/* allineamento */
+.allineamentoc{
+    align-content: center;
+}
+.allineamento_a_s{
+    align-content: end;
+}
+
+.dimLogo{
+    width: auto;
+    height: 120px;
+    margin-left: 50px;
+}
+.flex{
+    border: 50px #f400a1;
+    align-items:normal;
+}
+.altezza{
+    height: 150px;
+}
+
+/* bottone */
+.noUnd{
+    text-decoration: none;
+}
+button a{
+    
+    text-decoration: none;
+    color: #0a0a0a;
+    font-family:'Courier New ', Courier, monospace, bold;
+}
+.big {
+     font-size: 25px !important;
+    }
+/* modifica placeholder */
+::placeholder{
+    text-align: center;
+    color: #0a0a0a;
+}
+/* bottoni */
+.bottoni{
+    color: #f400a1;
+    background-color: #0a0a0a;    
+    border: none; 
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.button1:active:hover {
+    background-color: #85246b;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+/* input */
+input[type=password]  {
+    height: 30px;
+    width: 300px
+  }
+input[type=text] {
+    height: 30px;
+    width: 300px
+  }
