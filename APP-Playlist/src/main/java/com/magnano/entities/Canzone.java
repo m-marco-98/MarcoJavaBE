@@ -18,6 +18,8 @@ public class Canzone {
 	private double durata;
 	private String genere;
 	
+	//@ManyToMany
+	
 	//Getters and setters
 	public int getId() {
 		return id;

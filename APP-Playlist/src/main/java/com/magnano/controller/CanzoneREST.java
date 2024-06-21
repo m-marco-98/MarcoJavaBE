@@ -25,25 +25,25 @@ public class CanzoneREST {
 		return service.getListaCanzoni();
 	}
 	
-	@GetMapping("canzone")
-	public Canzone getCanzoneById(int id) {
+	@GetMapping("canzone/{id}")
+	public Canzone getCanzoneById(@PathVariable Integer id) {
 		// TODO Auto-generated method stub
 		return service.getCanzoneById(id);
 	}
 	
-	@GetMapping("canzone/titolo/{titolo}")
+	@GetMapping("canzoni/titolo/{titolo}")
 	public List<Canzone> getListaCanzoniByTitolo(@PathVariable String titolo) {
 		// TODO Auto-generated method stub
 		return service.getListaCanzoniByTitolo(titolo);
 	}
 	
-	@GetMapping("canzone/artista/{artista}")
+	@GetMapping("canzoni/artista/{artista}")
 	public List<Canzone> getListaCanzoniByArtista(@PathVariable String artista) {
 		// TODO Auto-generated method stub
 		return service.getListaCanzoniByArtista(artista);
 	}
 	
-	@GetMapping("canzone/genere/{genere}")
+	@GetMapping("canzoni/genere/{genere}")
 	public List<Canzone> getListaCanzoniByGenere(@PathVariable String genere) {
 		// TODO Auto-generated method stub
 		return service.getListaCanzoniByGenere(genere);

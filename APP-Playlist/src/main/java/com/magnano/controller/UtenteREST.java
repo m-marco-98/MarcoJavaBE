@@ -3,6 +3,7 @@ package com.magnano.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.magnano.entities.Utente;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-
 @RestController
 @RequestMapping("api")
 public class UtenteREST {
@@ -23,26 +23,21 @@ public class UtenteREST {
 	private UtenteService service;
 	
 	@GetMapping("utente/{id}")
-	public Utente getUtenteById(int id) {
-		return service.getUtenteById(id);
+	public Utente findUtenteById(@PathVariable Integer id) {
+		
+		Utente utente = service.findUtenteById(id);
+		return utente;
 	}
 	
 	@PostMapping("utente")
-	public Utente addUtente(@RequestBody String user) {
-		
-		Utente utente = new Utente();
-		utente.setNome(user);
-		utente.setCognome(user);
-		utente.setEmail(user);
-		utente.setPassword(user);
-		utente.setUsername(user);
-		return service.addUtente(utente);
+	public Utente addUtente(@RequestBody Utente user) {
+		return service.addUtente(user);
 	}
 	
-	@GetMapping("utente/login")
+	@GetMapping("utente/login/{username}&{password}")
+	@ResponseBody
 	@CrossOrigin
-	public Utente getUtenteByLogin(String username, String password) {
-		
+	public Utente getUtenteByLogin(@PathVariable String username, @PathVariable String password) {
 		return service.getUtenteByLogin(username, password);
 	}
 	

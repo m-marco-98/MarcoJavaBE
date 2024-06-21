@@ -15,25 +15,21 @@ public class UtenteServiceImpl implements UtenteService {
 	private UtenteDAO dao;
 	
 	@Override
-	public Utente getUtenteById(int id) {
-		// TODO Auto-generated method stub
+	public Utente findUtenteById(Integer id) {
+//		return dao.getById(id);
 		return dao.getReferenceById(id);
 	}
 
 	@Override
 	public Utente addUtente(Utente u) {
 	
-		// TODO Auto-generated method stub
 		return dao.save(u);
 	}
 
 	@Override
 	public Utente getUtenteByLogin(String username, String password) {
-		Utente utente = new Utente();
-		
-		dao.getUtenteByLogin(username, password);
-		
-		return utente;
+		return dao.getUtenteByLogin(username, password);
+	
 	}
 	
 	
